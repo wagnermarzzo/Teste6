@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michelly Vanessa Unhas</title>
+    <style>
+        /* Estilo do Body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        /* Estilo do Cabeçalho */
+        header {
+            background-color: #f05a28;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Banner */
+        .main-banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Seção de Serviços */
+        .services {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .services h2 {
+            color: #f05a28;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Seção de Agendamento */
+        .schedule {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .schedule h2 {
+            color: #f05a28;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .schedule label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .schedule input, .schedule select, .schedule button {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .schedule input[type="date"] {
+            font-size: 16px;
+        }
+
+        .schedule button {
+            background-color: #f05a28;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .schedule button:hover {
+            background-color: #d6491f;
+        }
+
+        /* Botão de Contato */
+        .contact-button {
+            background-color: #25D366; /* Cor do WhatsApp */
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .contact-button:hover {
+            background-color: #128C7E;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Michelly Vanessa Unhas</h1>
+            <p>Manicure e Pedicure de qualidade para você!</p>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="main-banner">
+        <img src="https://i.pinimg.com/originals/57/06/01/57060132745e29b1bf8474a4e66e0880.jpg" alt="Banner de Unhas Decoradas">
+    </section>
+
+    <!-- Serviços -->
+    <section class="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Manicure e Pedicure</li>
+            <li>Unha em Gel</li>
+            <li>Unha em Fibra</li>
+        </ul>
+    </section>
+
+    <!-- Agendamento -->
+    <section class="schedule">
+        <h2>Agendamento</h2>
+        <p>Escolha o dia e horário para agendar seu serviço!</p>
+        
+        <!-- Formulário de Agendamento -->
+        <form id="agendamentoForm" action="https://wa.me/5511964657571" method="get" target="_blank">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="Manicure e Pedicure">Manicure e Pedicure</option>
+                <option value="Unha em Gel">Unha em Gel</option>
+                <option value="Unha em Fibra">Unha em Fibra</option>
+            </select><br><br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br><br>
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="Sexta-feira 18:00">Sexta-feira 18:00</option>
+                <option value="Sexta-feira 19:00">Sexta-feira 19:00</option>
+                <option value="Sábado 07:00">Sábado 07:00</option>
+                <option value="Sábado 09:00">Sábado 09:00</option>
+                <option value="Sábado 11:00">Sábado 11:00</option>
+                <option value="Sábado 14:00">Sábado 14:00</option>
+                <option value="Sábado 17:00">Sábado 17:00</option>
+                <option value="Sábado 19:00">Sábado 19:00</option>
+            </select><br><br>
+
+            <button type="submit" class="button">Enviar Agendamento via WhatsApp</button>
+        </form>
+        
+        <!-- Botão de Contato para WhatsApp -->
+        <a href="https://wa.me/5511964657571" target="_blank">
+            <button class="contact-button">Contato via WhatsApp</button>
+        </a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Contato: (11) 96465-7571</p>
+        <p>Pix: 08751416417 - Michelly Vanessa Pessoa - Banco Itaú</p>
+    </footer>
+
+    <script>
+        // Função para validar o agendamento
+        document.getElementById('agendamentoForm').addEventListener('submit', function(event) {
+            // Obter a data e o horário selecionados
+            let data = new Date(document.getElementById('data').value);
+            let hora = document.getElementById('horario').value;
+
+            // Definir os horários válidos para agendamento
+            let horariosValidosSexta = ["Sexta-feira 18:00", "Sexta-feira 19:00"];
+            let horariosValidosSabado = ["Sábado 07:00", "Sábado 09:00", "Sábado 11:00", "Sábado 14:00", "Sábado 17:00", "Sábado 19:00"];
+
+            // Verificar se a data está correta
+            let diaSemana = data.getDay(); // 5 para sexta e 6 para sábado
+            if (diaSemana !== 5 && diaSemana !== 6) {
+                alert("Somente é permitido agendamento para sexta-feira ou sábado.");
+                event.preventDefault();
+                return;
+            }
+
+            // Verificar se o horário está dentro das opções válidas
+            if (diaSemana === 5 && !horariosValidosSexta.includes(hora)) {
+                alert("Selecione um horário válido para sexta-feira.");
+                event.preventDefault();
+                return;
+            }
+
+            if (diaSemana === 6 && !horariosValidosSabado.includes(hora)) {
+                alert("Selecione um horário válido para sábado.");
+                event.preventDefault();
+                return;
+            }
+        });
+    </script>
+</body>
+</html>
